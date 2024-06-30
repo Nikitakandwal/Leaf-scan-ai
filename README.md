@@ -53,7 +53,8 @@ leaf-scan-ai/
 
 Watch a quick demo of the Leaf Scan AI in action:
 
-<video width="480" height="270" controls>
-    <source src="https://raw.githubusercontent.com/Nikitakandwal/Leaf-scan-ai/main/assets/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+
+
+https://github.com/Nikitakandwal/Leaf-scan-ai/assets/98966392/a187ca40-61c5-48db-aaa1-f6da0b801167
+
+
