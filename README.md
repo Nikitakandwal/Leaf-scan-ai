@@ -53,8 +53,4 @@ leaf-scan-ai/
 
 Watch a quick demo of the Leaf Scan AI in action:
 
-
-
 https://github.com/Nikitakandwal/Leaf-scan-ai/assets/98966392/a187ca40-61c5-48db-aaa1-f6da0b801167
-
-
