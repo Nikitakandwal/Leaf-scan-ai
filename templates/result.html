@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Scan AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="/static/leaf.png" sizes="16x16 32x32">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Predicted Class: {{ prediction }}</p>
+        <img src="/{{ img_path }}" alt="Uploaded Image" class="result-image">
+        <br><br>
+        <a href="/" class="btn">Go back</a>
+    </div>
+</body>
+</html>

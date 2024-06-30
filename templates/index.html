@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Scan AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="/static/leaf.png" sizes="16x16 32x32">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Leaf Scan AI</h1>
+        <p>Scan and diagnose plant diseases instantly with AI. Upload an image of a plant leaf to get accurate disease predictions.</p>
+        <form action="/predict" method="post" enctype="multipart/form-data" class="upload-form">
+            <label class="custom-file-upload">
+                <input type="file" name="file" id="fileInput" onchange="previewFile()">
+                Choose File
+            </label>
+            <img id="preview" class="preview-image" src="" alt="Image Preview" style="display: none;">
+            <input type="submit" value="Upload" class="btn">
+        </form>
+    </div>
+    <script>
+        function previewFile() {
+            const preview = document.getElementById('preview');
+            const file = document.getElementById('fileInput').files[0];
+            const reader = new FileReader();
+            
+            reader.addEventListener('load', function () {
+                // convert image file to base64 string
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            }, false);
+            
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>
