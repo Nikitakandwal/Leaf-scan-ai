@@ -15,26 +15,6 @@ Leaf Scan AI is a web application for plant disease recognition using deep learn
 - **Machine Learning:** TensorFlow, Keras
 - **Deployment:** Deployed locally
 
-## Setup Instructions
-
-To run the Leaf Scan AI locally on your machine, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/leaf-scan-ai.git
-   cd leaf-scan-ai
-2. **Install dependencies**
-3. **Model Training**
-This project does not include the pre-trained model file (`plant_disease_model.h5`). To use the plant disease recognition feature, you will need to train your own model using the dataset.
-3. **Run the application**:
-Start the Flask server:
-```bash
-python app.py
-```
-Open your web browser and go to http://localhost:5000 to access the application.
-4. **Upload an image** :
-Choose a plant leaf image from your computer.
-Click on the "Upload" button to get the disease prediction result.
 
 ## Folder Structure
 ```bash
@@ -48,6 +28,8 @@ leaf-scan-ai/
 ├── model.h5          # Trained CNN model (example)
 └── README.md         # This file, providing project information
 ```
+
+This project does not include the pre-trained model file (`plant_disease_model.h5`). To use the plant disease recognition feature, you will need to train your own model using the dataset.
 
 ## Demo Video
 
